@@ -36,6 +36,7 @@ const Clock = () => {
       <div className="minutes-hand"></div>
       <div className="seconds-hand"></div>
     </div>
+    
   );
 };
 

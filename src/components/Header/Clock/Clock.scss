@@ -3,7 +3,7 @@ ul { list-style:none; margin:0; padding:0 }
 #watch {
   font-size:1em;
   position:relative;
-  font-size:90%;
+  font-size:80%;
   @media (max-width:$tablet) {
     font-size: 60%;
   }
@@ -267,4 +267,5 @@ ul { list-style:none; margin:0; padding:0 }
 @keyframes dsm {
   to { transform:translateY(-120em) }
 }
+
 

@@ -1,17 +1,18 @@
 import React from 'react'
-// import logo from "../../images/MATREX-logo.png"
-// import videoOne from "../../videos/video-3.mp4"
+// import videoOne from "../../videos/video-4.mp4"
 import Clock from './Clock/Clock'
+import Layout from './Layout/Layout'
 import "./Header.scss"
 
 const Headre = () => {
   return (
-    <header className='container'>
-      {/* <div className="layout"></div>
-      <div className="video">
-        <video src={videoOne} autoPlay loop muted />
-      </div> */}
-      <Clock />
+    <header>
+      <div className="overlay"></div>
+      <Layout />
+      <div className="container">
+        <Clock />
+        <p>Welcome to Matrex wab shop. We promise that you will find here what you are looking for.</p>
+      </div>
     </header>
   )
 }

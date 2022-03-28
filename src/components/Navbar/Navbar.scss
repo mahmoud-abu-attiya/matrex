@@ -1,0 +1,26 @@
+nav{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e4e4e4;
+  .container{
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    .theme , .nav-logo , .cart{
+      width: calc(100%/3);
+    }
+    .nav-logo{
+      text-align: center;
+      span{
+        font-size: 25px;
+        font-weight: bold;
+      }
+    }
+    .cart{
+      text-align: right;
+    }
+  }
+}

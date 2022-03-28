@@ -1,0 +1,12 @@
+@import "./varibals";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap');
+*{
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+body{
+  padding-top: 80px;
+  color:$textcolor;
+  background-color:$primarycolor;
+}

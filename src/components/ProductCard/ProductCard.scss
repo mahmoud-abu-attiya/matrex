@@ -1,0 +1,93 @@
+@import "../../styles/varibals";
+
+.n-card {
+  position: relative;
+  background: var(--color-article-background);
+  border-radius: 20px;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $secondcolor;
+    transform: skewY(345deg);
+    transition: 0.5s;
+  }
+  &::after {
+    content: "CORSAIR";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.1);
+  }
+  .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+    img{
+      width: 100%;
+    }
+  }
+  .contentBox {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+    h3 {
+      font-size: 18px;
+      // color: var(--color-page-background);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .price {
+      font-size: 24px;
+      color: green;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .buy {
+      position: relative;
+      padding: 10px 30px;
+      margin-top: 15px;
+      color: var(--color-page-background);
+      text-decoration: none;
+      background: $secondcolor;
+      border-radius: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: 0.5s;
+      border: none;
+    }
+  }
+  &:hover {
+    .contentBox .buy {
+      background: var(--color-text);
+      color: $secondcolor;
+      font-weight: bold;
+    }
+    &::before {
+      top: 0;
+      transform: skewY(360deg);
+    }
+    .prodduct{
+      transition: 0.3s;
+      transform: scale(1.03);
+    }
+    .price{
+      color:var(--color-page-background)
+    }
+  }
+}

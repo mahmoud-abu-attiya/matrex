@@ -1,9 +1,9 @@
 import React,{ useState } from "react";
 import "./Navbar.scss";
-import logo from "../../images/logo.png";
+// import logo from "../../images/logo.png";
 import { Badge } from "@material-ui/core";
 import ShoppingCartTwoToneIcon from "@material-ui/icons/ShoppingCartTwoTone";
-import SearchIcon from "@material-ui/icons/Search";
+// import SearchIcon from "@material-ui/icons/Search";
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 
@@ -12,9 +12,10 @@ const Navbar = () => {
     checked: false,
   });
 
-  const handleChange = (e) => {
+  const handleDarkMode = (e) => {
     setState({  checked : e.target.checked });
-  };
+    document.body.classList.toggle('dark');
+  }
   return (
     <nav className="bg-gray-200 text-gray-900">
       <div className="container">
@@ -23,7 +24,7 @@ const Navbar = () => {
             control={
               <Switch
                 checked={state.checked}
-                onChange={handleChange}
+                onChange={handleDarkMode}
                 color="primary"
               />
             }
@@ -32,7 +33,7 @@ const Navbar = () => {
         </div>
 
         <div className="nav-logo">
-          <span className="text-3xl font-bold">Matrex</span>
+          <span className="text-3xl font-bold">المصري</span>
         </div>
 
         <div className="cart">

@@ -1,13 +1,16 @@
+@import '../../styles/varibals';
 nav{
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #e4e4e4;
+  background-color: var(--color-article-background);
   z-index: 20;
+  border-bottom: 2px solid $secondcolor;
+  box-shadow: 0px -15px 20px 13px var(--color-article-background);
   .container{
     display: flex;
-    min-height: 80px;
+    min-height: 70px;
     align-items: center;
     justify-content: space-between;
     .theme , .nav-logo , .cart{
@@ -16,6 +19,7 @@ nav{
     .nav-logo{
       text-align: center;
       span{
+        font-family: 'thuluth-decorated';
         font-size: 25px;
         font-weight: bold;
       }

@@ -1,0 +1,17 @@
+@import "../styles/varibals";
+.formen{
+  margin:50px auto; 
+  h2{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .card-container{
+    display:grid; 
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 20px;
+    text-align: center; 
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+}

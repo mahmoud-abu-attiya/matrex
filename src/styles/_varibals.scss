@@ -1,5 +1,25 @@
-$primarycolor : rgb(238, 238, 238);
-$textcolor : rgb(14, 14, 14);
-$secondcolor : rgb(63, 81, 181);
+
 $mobile :  767px;
 $tablet :  992px;
+$secondcolor : rgb(63, 81, 181);
+$color-black: rgb(31, 31, 31);
+$color-white: rgb(236, 236, 236);
+$color-gray-light: #ccc;
+$color-gray-dark: #2a2a2a;
+
+:root {
+  // color:#2b2b2b;
+  --color-page-background: #{$color-gray-light};
+  --color-text: #{$color-black};
+  --color-border: #{$color-black};
+  --color-article-background: #{$color-white};
+  --color-article-shadow: #{$color-gray-dark};
+}
+
+.dark {
+  --color-page-background: #{$color-gray-dark};
+  --color-text: #{$color-white};
+  --color-border: #{$color-white};
+  --color-article-background: #{$color-black};
+  --color-article-shadow: #{$color-gray-dark};
+}

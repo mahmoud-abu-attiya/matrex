@@ -5,8 +5,48 @@
   margin: 0;
   font-family: 'Nunito', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body{
-  padding-top: 80px;
-  color:$textcolor;
-  background-color:$primarycolor;
+  padding-top: 70px;
+  color:var(--color-text);
+  background-color:var(--color-page-background);
+}
+// body.dark{
+//   color: var(--color-page-background);
+//   background-color: var(--color-text);
+// }
+.atc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: $secondcolor;
+  color:var(--color-text);
+  border-radius: 5px;
+  &:hover{
+    color:#fff;
+  }
+}
+.view-more{
+  text-decoration: none;
+  width: 80%;
+  max-width: 200px;
+  height: 50px;
+  margin: 20px auto;
+  color: $secondcolor;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color:#3f51b523;
+  border-radius: 5px;
+  border: 2px solid $secondcolor;
+  transition: 0.2s;
+  &:hover{
+    background-color: $secondcolor;
+    color: #fff;
+  }
 }
